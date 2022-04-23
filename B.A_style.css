@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+html , body{
+	margin: 0; /* marge extérieur */
+	padding: 0;/*marge intérieur*/
+	width: 100%;height: 100%; /* largeur hauteur*/
+	
+	
+}
+#entete{
+	margin: 0;padding: 0; 
+	width: 100%;height: 50%;
+	position: relative;
+	overflow: hidden; /*raccourcie qui définit comment gérer le dépassement du contenu d'un élément dans son bloc*/
+	background-color: transparent;
+	z-index: 1;	/*permet de définir le plan dans lequel des éléments sont affichés, selon l'axe Z*/
+}
+.video_entete{
+	left: 0; /*permet de cibler les pages a gauche*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 0;
+	object-fit:cover; /*permet de spécifier la manière s'ajuste la taille d'un élément dit remplacé à l'intérieur du div*/
+	object-position:center;
+}
+.nomsite{
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+	padding-top: 5%; /* marge quittant du haut*/
+	color: #FFF;
+	position: relative;
+	font-family: "ewert";
+}
+#formateriel{ 
+	position: relative;
+	border:1px solid #FFF;
+	border-left: none;border-right: none;
+	background-color: rgba(000,000,000,0.2);
+	margin-left: auto;margin-right: auto;
+	width: 70%;min-height: 10%;
+	text-align: center;
+	padding: 2%;
+	
+}
+#motcle{
+	height: 30px;width: 300px;
+	border: none;padding-left: 2px;
+}
+.btfind{
+	height: 30px;width:300px;
+	border: none;background-color:#F30;
+	color: #FFF;
+	
+}
+/*-------------------------partie dynamique-------------------*/
+#articles{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+	vertical-align: middle;
+	
+	
+}
+#materiels{
+	border: 1px solid #999;
+	width: 150px;
+	min-height: 200px;
+	margin: 10px;
+	padding-left: 20px;
+	float: left;  /* pour avoir les informations sur la meme ligne*/ 
+}
+#materiels img{
+	margin: 5px;
+	width: 130px;
+	height: 100px;
+}
+#articles b{
+	color: #F30;
+	font-size: 18px; /* taille du texte*/
+}
+
+/*-------------------------------login-------------------*/
+	
+a{
+	text-decoration: none;/* pas de soulignement bleu*/
+}
+#entete .login{
+	opacity:0.8;/* visibilité*/
+	color: white;
+	padding-top: 14px;
+	padding-right:20px;
+	margin-top: 8px;
+	margin-right: 0px;
+	border: 1px solid #F30;
+	border-right: none;
+	cursor:pointer;
+	width: 5%;
+	right: 0px;
+	position: absolute;
+	z-index: 10;/*pour que l'affichage soit au premier plan*/
+	text-align: center;
+	
+}
+#entete .login:hover{/*hover: l'animation lorsqu'on approche la souris*/
+	opacity: 1;
+	background-color: #F30;
+	border: none;
+}
+
+/*--------------------------------------------------ici page login--------------------------------------------------------*/
+#formlogin{
+	position: relative;
+	border:1px solid #FFF;
+	border-left: none;border-right: none;
+	background-color: rgba(000,000,000,0.2);
+	margin-top: 10px;/*marge exterieur basse*/
+	margin-left: auto;/*marge exterieur droite*/
+	margin-right: auto;/*marge exterieur gauche*/
+	margin-bottom: auto;/*marge exterieur haute*/
+	text-align: center;
+	width: 600px;
+	height: 300px;
+	
+
+	
+}
+#formlogin h1{
+	width: 500px;
+	padding: 30px;
+	box-shadow: rgba(000,000,000,0.2);/*ombre*/
+	text-align: center;
+
+}
+.zonetext{
+	border-color: #F30;
+	color: white;
+	padding-top: 40px;/* marge interieur basse*/
+	padding-right: 20px;/*marge interieur gauche*/
+	padding-bottom: 20px;/*marge interieur haute*/
+	margin-top: 90px;
+	margin-right: 0px;
+	border: none;
+	cursor: pointer;
+	width: 100px;
+
+}
+.submit{
+	background-color: #F30;
+	color:white;
+	padding-top: 14px;
+	padding-right: 20px;
+	margin-top: 8px;
+	margin-right: 0px;
+	border: none;
+	cursor: pointer;
+	width: 100px; 
+	                                                   
+}
+.submit:hover{
+	background-color: white;
+	color: #F30;
+	border: 2px solid #F30;
+}
